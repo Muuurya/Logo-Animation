@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #021823;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+h1 {
+  font-size: 50px;
+}
+.card1 {
+  display: flex;
+  color: white;
+  animation-name: Text1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.card2 {
+  display: flex;
+  color: white;
+  animation-name: Text2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+img {
+  width: 200px;
+  height: 150px;
+  animation-name: Logo;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes Logo {
+  50% {
+    transform: translateY(50px) scale(1.5);
+  }
+  100% {
+    transform: translateY(50px) scale(1);
+  }
+}
+@keyframes Text1 {
+  25% {
+    transform: translateX(-90px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
+@keyframes Text2 {
+  25% {
+    transform: translateX(90px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
+@keyframes Drop {
+  100% {
+    transform: translateY(90px);
+  }
+}
+.h1 {
+  animation-name: Drop;
+  animation-delay: 1.5s;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.h2 {
+  animation-name: Drop;
+  animation-delay: 1.8s;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.h3 {
+  animation-name: Drop;
+  animation-delay: 1.9s;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.h4 {
+  animation-name: Drop;
+  animation-delay: 2s;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.h5 {
+  animation-name: Drop;
+  animation-delay: 2.1s;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
